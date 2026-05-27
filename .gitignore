@@ -1,0 +1,7 @@
+analysis/figures/*
+!analysis/figures/.gitkeep
+slps/*
+!slps/.gitkeep
+ori/
+__pycache__/
+.DS_Store

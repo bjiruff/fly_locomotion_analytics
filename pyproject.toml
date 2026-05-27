@@ -1,0 +1,29 @@
+[project]
+name = "fla"
+version = "0.1.0"
+description = "Locomotion feature extraction for flies tracked with SLEAP"
+authors = [
+    {name = "Bruce Ruff"}
+]
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "sleap-io",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "seaborn>=0.12",
+    "scikit-learn>=1.2",
+    "umap-learn>=0.5",
+    "plotly>=5.0",
+    "ipykernel (>=7.2.0,<8.0.0)",
+    "nbformat (>=5.10.4,<6.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [{include = "fla", from = "src"}]
